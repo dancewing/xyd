@@ -3,41 +3,6 @@ import {View, TouchableOpacity, StyleSheet, Dimensions} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 import {Icon} from '@ant-design/react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: 'black',
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-  topButtons: {
-    flex: 1,
-    width: Dimensions.get('window').width,
-    alignItems: 'flex-start',
-  },
-  bottomButtons: {
-    flex: 1,
-    width: Dimensions.get('window').width,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-
-  flipButton: {
-    flex: 1,
-    marginTop: 20,
-    right: 20,
-    alignSelf: 'flex-end',
-  },
-  recordingButton: {
-    marginBottom: 10,
-  },
-});
-
 class PhotoCamera extends React.PureComponent<any> {
   state = {
     type: RNCamera.Constants.Type.back,
@@ -87,5 +52,54 @@ class PhotoCamera extends React.PureComponent<any> {
     );
   }
 }
+
+const {width, height} = Dimensions.get('window');
+
+const Height = () => {
+  return height;
+};
+
+const Width = () => {
+  return width;
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: 'black',
+  },
+  preview: {
+    flex: 1,
+    // justifyContent: 'flex-end',
+    // alignItems: 'center',
+    height: Height(),
+  },
+  topButtons: {
+    position: 'absolute',
+    left: 20,
+    top: 20,
+    width: Width(),
+    alignItems: 'flex-start',
+  },
+  bottomButtons: {
+    position: 'absolute',
+    bottom: 20,
+    width: Width(),
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+
+  flipButton: {
+    flex: 1,
+    marginTop: 20,
+    right: 20,
+    alignSelf: 'flex-end',
+  },
+  recordingButton: {
+    marginBottom: 10,
+  },
+});
 
 export default PhotoCamera;

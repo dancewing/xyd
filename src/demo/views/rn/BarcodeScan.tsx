@@ -84,9 +84,9 @@ class BarcodeScan extends Component<any, any> {
   }
 
   // 关闭扫一扫
-  closeScanPage() {
-    this.props.navigation.navigate('Tab', {screen: 'home'});
-  }
+  // closeScanPage() {
+  //   this.props.navigation.navigate('Tab', {screen: 'home'});
+  // }
 
   render() {
     return (
@@ -132,9 +132,6 @@ class BarcodeScan extends Component<any, any> {
                 </Animated.View>
               </View>
             </View>
-            <TouchableOpacity activeOpacity={0.8} style={styles.scan_top_box} onPress={() => this.closeScanPage()}>
-              <Image source={require('../../assets/camera/flashOff.png')} />
-            </TouchableOpacity>
             <View style={styles.scan_info_box}>
               <Text style={styles.scan_info}>将条形码放入框内，即可自动扫描</Text>
             </View>
