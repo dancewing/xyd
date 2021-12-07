@@ -1286,15 +1286,6 @@
   dependencies:
     nanoid "^3.1.23"
 
-"@react-navigation/stack@6.0.11":
-  version "6.0.11"
-  resolved "https://registry.npmmirror.com/@react-navigation/stack/download/@react-navigation/stack-6.0.11.tgz#9a94089da7a6bb6b41084c2b9e88ef542d41345d"
-  integrity sha1-mpQInaemu2tBCEwrnojvVC1BNF0=
-  dependencies:
-    "@react-navigation/elements" "^1.2.1"
-    color "^3.1.3"
-    warn-once "^0.1.0"
-
 "@sentry/browser@6.12.0":
   version "6.12.0"
   resolved "https://registry.npmmirror.com/@sentry/browser/download/@sentry/browser-6.12.0.tgz?cache=0&sync_timestamp=1637053023771&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40sentry%2Fbrowser%2Fdownload%2F%40sentry%2Fbrowser-6.12.0.tgz#970cd68fa117a1e1336fdb373e3b1fa76cd63e2d"
@@ -5984,11 +5975,6 @@ react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmmirror.com/react-is/download/react-is-16.13.1.tgz"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
-
-react-native-amap-geolocation@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmmirror.com/react-native-amap-geolocation/download/react-native-amap-geolocation-1.1.2.tgz#4388731828bbe84493ac5894d0df27b4402ae3c5"
-  integrity sha1-Q4hzGCi76ESTrFiU0N8ntEAq48U=
 
 react-native-amap3d@3.0.3:
   version "3.0.3"

@@ -8,6 +8,7 @@ module.exports = {
         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
         alias: {
           '@components': './src/components',
+          'react-native-amap-geolocation': './plugins/react-native-amap-geolocation',
         },
       },
     ],

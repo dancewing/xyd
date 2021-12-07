@@ -340,7 +340,7 @@ PODS:
   - React-jsinspector (0.66.3)
   - React-logger (0.66.3):
     - glog
-  - react-native-amap-geolocation (1.1.2):
+  - react-native-amap-geolocation (1.1.3):
     - AMapLocation (~> 2.6.0)
     - React
   - react-native-amap3d (3.0.3):
@@ -507,7 +507,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-amap-geolocation (from `../node_modules/react-native-amap-geolocation/lib/ios`)
+  - react-native-amap-geolocation (from `../plugins/react-native-amap-geolocation/ios`)
   - react-native-amap3d (from `../node_modules/react-native-amap3d/lib/ios`)
   - react-native-camera (from `../node_modules/react-native-camera`)
   - react-native-camera/BarcodeDetectorMLKit (from `../node_modules/react-native-camera`)
@@ -610,7 +610,7 @@ EXTERNAL SOURCES:
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-amap-geolocation:
-    :path: "../node_modules/react-native-amap-geolocation/lib/ios"
+    :path: "../plugins/react-native-amap-geolocation/ios"
   react-native-amap3d:
     :path: "../node_modules/react-native-amap3d/lib/ios"
   react-native-camera:
@@ -716,7 +716,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 433a691aee158533a6a6ee9c86cb4a1684fa2853
   React-jsinspector: d9c8eb0b53f0da206fed56612b289fec84991157
   React-logger: e522e76fa3e9ec3e7d7115b49485cc065cf4ae06
-  react-native-amap-geolocation: 5b42219a67e29b4c1ce0b75faf3b8869f97e2f7c
+  react-native-amap-geolocation: 10528399a2073fb8aab0e30f74ffe299ed969de2
   react-native-amap3d: f5091fb1352ab6e13b588452fb15f28d971032c9
   react-native-camera: 3eae183c1d111103963f3dd913b65d01aef8110f
   react-native-cameraroll: 2957f2bce63ae896a848fbe0d5352c1bd4d20866

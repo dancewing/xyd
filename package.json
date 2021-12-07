@@ -12,8 +12,8 @@
     "build:ios:dev": "ENVFILE=.env.dev react-native bundle --dev false --entry-file index.js --bundle-output ios/bundle/main.jsbundle --platform ios --assets-dest ./ios/bundle",
     "build:ios:qa": "ENVFILE=.env.qa react-native bundle --dev false --entry-file index.js --bundle-output ios/bundle/main.jsbundle --platform ios --assets-dest ./ios/bundle",
     "build:ios:prod": "ENVFILE=.env.prod react-native bundle --dev false --entry-file index.js --bundle-output ios/bundle/main.jsbundle --platform ios --assets-dest ./ios/bundle",
-    "build:android:dev": "ENVFILE=.env.dev react-native run-android --no-packager --variant=devRelease --appIdSuffix=dev",
-    "build:android:qa": "ENVFILE=.env.qa react-native run-android --no-packager --variant=qaRelease --appIdSuffix=qa",
+    "build:android:dev": "ENVFILE=.env.dev react-native run-android --no-packager --variant=devRelease",
+    "build:android:qa": "ENVFILE=.env.qa react-native run-android --no-packager --variant=qaRelease",
     "build:android:prod": "ENVFILE=.env.prod react-native run-android --no-packager --variant=prodRelease"
   },
   "dependencies": {
@@ -36,7 +36,6 @@
     "react-native-camera": "4.2.1",
     "react-native-config": "1.4.5",
     "react-native-device-info": "8.4.8",
-    "react-native-amap-geolocation": "1.1.2",
     "react-native-amap3d": "3.0.3",
     "react-native-gesture-handler": "1.10.3",
     "react-native-pager-view": "5.4.9",

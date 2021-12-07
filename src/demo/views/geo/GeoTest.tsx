@@ -20,45 +20,28 @@ class GeoTest extends Component<any, any> {
       android: 'f26161f838bb5a3416969c085f1bb6c0',
     });
     if (Platform.OS === 'android') {
-      setNeedAddress(true);
       // 对于 Android 需要自行根据需要申请权限
+      setNeedAddress(true);
       await PermissionsAndroid.requestMultiple([
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
         PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
       ]);
     }
-    if (Platform.OS === 'ios') {
-      setLocatingWithReGeocode(true);
-    }
-  }
-
-  UNSAFE_componentWillReceiveProps(nextProps: any) {
-    // 监听扫码页面获取的值
-    let {barCodeData} = nextProps.route.params;
-    let that = this;
-    if (barCodeData && barCodeData.typeValue && barCodeData.typeName === 'testScan') {
-      // console.log('update scan result:', barCodeData);
-      that.setState({
-        inputValue: barCodeData.typeValue,
-      });
-    }
-  }
-  handleScanCheck() {
-    this.props.navigation.navigate('BarcodeScan_RN');
   }
 
   async getGeoLocation() {
     const this_ = this;
-    const hasLocationPermission = await this.hasLocationPermission();
-    if (hasLocationPermission) {
+    //const hasLocationPermission = await this.hasLocationPermission();
+    if (true) {
       Geolocation.getCurrentPosition(
         position => {
+          console.log(position);
           this_.setState({
             coords: position.coords,
           });
-          if (position.location.address) {
+          if (position.location.regeo) {
             this.setState({
-              address: position.location.address,
+              address: position.location.regeo.address,
             });
           }
         },
