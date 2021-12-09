@@ -11,7 +11,7 @@ app.use(
     secret: 'secret12345', // 签名的密钥 或 PublicKey
     algorithms: ['HS256'],
   }).unless({
-    path: ['/login', '/signup'], // 指定路径不经过 Token 解析
+    path: ['/login', '/signup', '/second'], // 指定路径不经过 Token 解析
   }),
 );
 

@@ -1,5 +1,4 @@
 rootProject.name = 'xydti'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
-// include ':react-native-baidu-location'
-// project(':react-native-baidu-location').projectDir = new File(settingsDir, '../react-native-baidu-location/android')
+

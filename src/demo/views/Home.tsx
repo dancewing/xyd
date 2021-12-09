@@ -21,7 +21,6 @@ export default function Home(props: Props) {
       {/*<Button onPress={() => props.navigation.navigate('AliFaceVerify')}>AliFaceVerify</Button>*/}
       <Button onPress={() => props.navigation.navigate('GeoTest')}>GeoLocation</Button>
       <Button onPress={() => props.navigation.navigate('TraceTest')}>轨迹记录</Button>
-      <Button onPress={() => props.navigation.navigate('Bgfetch')}>Background Job</Button>
       <Button onPress={() => props.navigation.navigate('amap3d')}>高德地图</Button>
     </ScrollView>
   );

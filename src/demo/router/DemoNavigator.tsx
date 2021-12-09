@@ -1,5 +1,4 @@
 import {Router} from 'types';
-import Home from "demo/views/amap3d/home";
 const router: Router[] = [
   {
     name: 'AntForm', //跳转路径
@@ -66,12 +65,6 @@ const router: Router[] = [
     name: 'TraceTest',
     title: 'TraceTest',
     component: require('../views/geo/TraceTest').default,
-    headerShown: true,
-  },
-  {
-    name: 'Bgfetch',
-    title: 'Bgfetch',
-    component: require('../views/bgfetch/index').default,
     headerShown: true,
   },
   {

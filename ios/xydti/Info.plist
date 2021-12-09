@@ -4,7 +4,8 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>react-native-background-fetch</string>
+		<string>com.transistorsoft.fetch</string>
+		<string>com.transistorsoft.customtask</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
@@ -45,6 +46,13 @@
 	<string>AMapLocationKit需要定位权限才可以正常使用，如果您需要使用后台定位功能请选择“始终允许”。</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>AMapLocationKit需要定位权限才可以使用</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>AMapGeoFenceScene</key>
+		<string>AMapLocationKit 地理围栏功能需要一次精确定位权限才可以使用</string>
+		<key>AMapLocationScene</key>
+		<string>AMapLocationKit 需要一次精确定位权限才可以正常使用</string>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>AMapLocationKit需要定位权限才可以正常使用</string>
 	<key>NSMicrophoneUsageDescription</key>
@@ -53,13 +61,6 @@
 	<string>Your message to user when the photo library is accessed for the first time</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Your message to user when the photo library is accessed for the first time</string>
-	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
-	<dict>
-		<key>AMapGeoFenceScene</key>
-		<string>AMapLocationKit 地理围栏功能需要一次精确定位权限才可以使用</string>
-		<key>AMapLocationScene</key>
-		<string>AMapLocationKit 需要一次精确定位权限才可以正常使用</string>
-	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>antfill.ttf</string>
